@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="356.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dist.redfx.connectFXMLController">
+    <children>
+      <Rectangle fx:id="backIDRect" arcHeight="5.0" arcWidth="5.0" fill="#dcdee0" height="436.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+       <Label fx:id="label" layoutX="277.0" layoutY="-3.0" minHeight="16" minWidth="43.0" prefHeight="25.0" prefWidth="43.0" text="... !" textFill="#f50101" />
+       <Button fx:id="connectIDButton" layoutX="232.0" layoutY="160.0" onAction="#connectToRedis" text="Connect" />
+      <Label layoutX="39.0" layoutY="107.0" prefHeight="15.0" prefWidth="81.0" text="Redis host:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <Label layoutX="38.0" layoutY="136.0" prefHeight="15.0" prefWidth="81.0" text="Redis port:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Label>
+      <TextField fx:id="redisHost" layoutX="135.0" layoutY="102.0" text="localhost" />
+      <TextField fx:id="redisPort" layoutX="135.0" layoutY="131.0" text="6379" />
+      <Label fx:id="errorMsg" layoutX="51.0" layoutY="77.0" prefHeight="16.0" prefWidth="262.0" text="Unable to connect. is your host correct?" visible="false" />
+      <TextFlow fx:id="appTitle" layoutX="35.0" layoutY="40.0" prefHeight="37.0" prefWidth="262.0" textAlignment="CENTER" />
+      <ListView fx:id="messageIDListView" layoutX="14.0" layoutY="268.0" prefHeight="149.0" prefWidth="318.0" />
+      <Separator layoutX="22.0" layoutY="199.0" prefHeight="0.0" prefWidth="299.0" />
+      <Separator layoutX="335.0" layoutY="2.0" orientation="VERTICAL" prefHeight="361.0" prefWidth="0.0" />
+      <TextField fx:id="PubIDTextField" layoutX="355.0" layoutY="230.0" prefHeight="25.0" prefWidth="164.0" />
+      <Button fx:id="PubIDButton" layoutX="531.0" layoutY="230.0" mnemonicParsing="false" onAction="#publishToRedis" text="Publish" />
+      <Label layoutX="38.0" layoutY="213.0" text="Subscribed to:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="SubChannelIDTextfield" layoutX="132.0" layoutY="208.0" promptText="testing" />
+      <Button fx:id="changeSUBIDButton" layoutX="160.0" layoutY="238.0" mnemonicParsing="false" onAction="#changeSub" text="Change Subscription" />
+      <Label layoutX="355.0" layoutY="206.0" text="Channel:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="channelIDTextField" layoutX="428.0" layoutY="201.0" />
+      <TextArea fx:id="infoIDTextArea" layoutX="341.0" layoutY="53.0" prefHeight="132.0" prefWidth="254.0" />
+      <Label layoutX="341.0" layoutY="33.0" text="Server info:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

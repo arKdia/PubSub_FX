@@ -13,7 +13,7 @@
 <AnchorPane id="AnchorPane" prefHeight="356.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dist.redfx.connectFXMLController">
     <children>
       <Rectangle fx:id="backIDRect" arcHeight="5.0" arcWidth="5.0" fill="#dcdee0" height="436.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
-       <Label fx:id="label" layoutX="277.0" layoutY="-3.0" minHeight="16" minWidth="43.0" prefHeight="25.0" prefWidth="43.0" text="... !" textFill="#f50101" />
+       <Label fx:id="label" layoutX="239.0" layoutY="-3.0" minHeight="16" minWidth="43.0" prefHeight="25.0" prefWidth="81.0" text="... !" textFill="#f50101" />
        <Button fx:id="connectIDButton" layoutX="232.0" layoutY="160.0" onAction="#connectToRedis" text="Connect" />
       <Label layoutX="39.0" layoutY="107.0" prefHeight="15.0" prefWidth="81.0" text="Redis host:">
          <font>
@@ -51,5 +51,8 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </Label>
+      <Label layoutX="17.0" layoutY="177.0" prefHeight="16.0" prefWidth="227.0" text="currently subscribed to &quot;testing&quot;" textFill="#ff0c0c" />
+      <Label layoutX="338.0" layoutY="17.0" text="Query the server for available channels here" textFill="#f50000" />
+      <TextArea editable="false" layoutX="348.0" layoutY="263.0" prefHeight="157.0" prefWidth="241.0" text="currently publish to &quot;home&quot; channel&#10;wrtite &quot;testing&quot; to publish there&#10;Message types:&#10;&quot;hello&quot; is a message&#10;&quot;msg:hello&quot; -&gt; 'hello' is a message&#10;&quot;color:red&quot; -&gt; changes window to color&#10;&#10;" />
     </children>
 </AnchorPane>

@@ -4,6 +4,7 @@ import com.dist.redfx.service.RedisService;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;
@@ -72,7 +73,7 @@ public class connectFXMLController implements Initializable {
     Button changeSUBIDButton;
     
     @FXML
-    TextArea infoIDTextArea;
+    ListView channelIDListView;
     
     private int i = 0;
     private RedisService redisService;
@@ -87,6 +88,7 @@ public class connectFXMLController implements Initializable {
     
     
     ArrayList<String> messageContainer = new ArrayList<String>();
+    ArrayList<String> info = new ArrayList<String>();
     
     private CountDownLatch messageReceivedLatch = new CountDownLatch(1);
     private CountDownLatch publishLatch = new CountDownLatch(1);
@@ -224,10 +226,16 @@ public class connectFXMLController implements Initializable {
      *
      */
     public void serverInfo(){
-        //Jedis jedis = new Jedis(JEDIS_SERVER);
+        Jedis jedis = new Jedis(JEDIS_SERVER);
+        info = (ArrayList<String>) jedis.pubsubChannels("*");
+        for(int i=0; i < info.size(); i++){
+            //log("from channe;l: %d", info.size());
+            channelIDListView.getItems().add(channelIDListView.getItems().size(), info.get(i));
+        }
         //jedis.getClient().sendCommand("PUBSUB CHANNELS");
         //String info = redisService.getInfo("stats");
-        //infoIDTextArea.setText(info);
+        //infoIDTextArea.setText(info);172.17.
+        
         
     }
 

@@ -45,8 +45,7 @@
          </font>
       </Label>
       <TextField fx:id="channelIDTextField" layoutX="428.0" layoutY="201.0" />
-      <TextArea fx:id="infoIDTextArea" layoutX="341.0" layoutY="53.0" prefHeight="132.0" prefWidth="254.0" />
-      <Label layoutX="341.0" layoutY="33.0" text="Server info:">
+      <Label layoutX="341.0" layoutY="33.0" text="Available channels:">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -54,5 +53,6 @@
       <Label layoutX="17.0" layoutY="177.0" prefHeight="16.0" prefWidth="227.0" text="currently subscribed to &quot;testing&quot;" textFill="#ff0c0c" />
       <Label layoutX="338.0" layoutY="17.0" text="Query the server for available channels here" textFill="#f50000" />
       <TextArea editable="false" layoutX="348.0" layoutY="263.0" prefHeight="157.0" prefWidth="241.0" text="currently publish to &quot;home&quot; channel&#10;wrtite &quot;testing&quot; to publish there&#10;Message types:&#10;&quot;hello&quot; is a message&#10;&quot;msg:hello&quot; -&gt; 'hello' is a message&#10;&quot;color:red&quot; -&gt; changes window to color&#10;&#10;" />
+      <ListView fx:id="channelIDListView" layoutX="348.0" layoutY="52.0" prefHeight="141.0" prefWidth="241.0" />
     </children>
 </AnchorPane>

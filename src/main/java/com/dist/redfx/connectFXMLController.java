@@ -84,7 +84,7 @@ public class connectFXMLController implements Initializable {
     private String code;
     private String msg;
 
-    private static final String JEDIS_SERVER = "localhost";
+    private static String JEDIS_SERVER;
     
     
     ArrayList<String> messageContainer = new ArrayList<String>();
@@ -96,6 +96,7 @@ public class connectFXMLController implements Initializable {
 
     public void connectToRedis(ActionEvent event) throws IOException, InterruptedException {
         String hostname = redisHost.getText();
+        JEDIS_SERVER = redisHost.getText();
         String port = redisPort.getText();
         channelIDTextField.setText("home");
         port = StringUtils.isNumeric(port) ? port : "6379";

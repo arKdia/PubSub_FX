@@ -12,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="356.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dist.redfx.connectFXMLController">
     <children>
-      <Rectangle fx:id="backIDRect" arcHeight="5.0" arcWidth="5.0" fill="#dcdee0" height="436.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="606.0" />
+      <Rectangle fx:id="backIDRect" arcHeight="5.0" arcWidth="5.0" fill="#dcdee0" height="436.0" layoutX="-1.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="878.0" />
        <Label fx:id="label" layoutX="239.0" layoutY="-3.0" minHeight="16" minWidth="43.0" prefHeight="25.0" prefWidth="81.0" text="... !" textFill="#f50101" />
        <Button fx:id="connectIDButton" layoutX="232.0" layoutY="160.0" onAction="#connectToRedis" text="Connect" />
       <Label layoutX="39.0" layoutY="107.0" prefHeight="15.0" prefWidth="81.0" text="Redis host:">
@@ -29,7 +29,7 @@
       <TextFlow fx:id="appTitle" layoutX="35.0" layoutY="40.0" prefHeight="37.0" prefWidth="262.0" textAlignment="CENTER" />
       <ListView fx:id="messageIDListView" layoutX="14.0" layoutY="268.0" prefHeight="149.0" prefWidth="318.0" />
       <Separator layoutX="22.0" layoutY="199.0" prefHeight="0.0" prefWidth="299.0" />
-      <Separator layoutX="335.0" layoutY="2.0" orientation="VERTICAL" prefHeight="361.0" prefWidth="0.0" />
+      <Separator layoutX="335.0" layoutY="15.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="6.0" />
       <TextField fx:id="PubIDTextField" layoutX="355.0" layoutY="230.0" prefHeight="25.0" prefWidth="164.0" />
       <Button fx:id="PubIDButton" layoutX="531.0" layoutY="230.0" mnemonicParsing="false" onAction="#publishToRedis" text="Publish" />
       <Label layoutX="38.0" layoutY="213.0" text="Subscribed to:">
@@ -54,5 +54,66 @@
       <Label layoutX="338.0" layoutY="17.0" text="Query the server for available channels here" textFill="#f50000" />
       <TextArea editable="false" layoutX="348.0" layoutY="263.0" prefHeight="157.0" prefWidth="241.0" text="currently publish to &quot;home&quot; channel&#10;wrtite &quot;testing&quot; to publish there&#10;Message types:&#10;&quot;hello&quot; is a message&#10;&quot;msg:hello&quot; -&gt; 'hello' is a message&#10;&quot;color:red&quot; -&gt; changes window to color&#10;&#10;" />
       <ListView fx:id="channelIDListView" layoutX="348.0" layoutY="52.0" prefHeight="141.0" prefWidth="241.0" />
+      <Separator layoutX="602.0" layoutY="15.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="6.0" />
+      <Button fx:id="ID1" layoutX="621.0" layoutY="81.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID2" layoutX="658.0" layoutY="81.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID3" layoutX="695.0" layoutY="81.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID4" layoutX="732.0" layoutY="81.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID5" layoutX="769.0" layoutY="81.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID6" layoutX="806.0" layoutY="81.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID7" layoutX="621.0" layoutY="118.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID8" layoutX="658.0" layoutY="118.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID9" layoutX="695.0" layoutY="118.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID10" layoutX="732.0" layoutY="118.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID11" layoutX="769.0" layoutY="118.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID12" layoutX="806.0" layoutY="118.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID13" layoutX="621.0" layoutY="155.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID14" layoutX="658.0" layoutY="155.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID15" layoutX="695.0" layoutY="155.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID16" layoutX="732.0" layoutY="155.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID17" layoutX="769.0" layoutY="155.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID18" layoutX="806.0" layoutY="155.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID19" layoutX="621.0" layoutY="192.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID20" layoutX="658.0" layoutY="192.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID21" layoutX="695.0" layoutY="192.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID22" layoutX="732.0" layoutY="192.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID23" layoutX="769.0" layoutY="192.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID24" layoutX="806.0" layoutY="192.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID25" layoutX="621.0" layoutY="229.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID26" layoutX="658.0" layoutY="229.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID27" layoutX="695.0" layoutY="229.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID28" layoutX="732.0" layoutY="229.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID29" layoutX="769.0" layoutY="229.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID30" layoutX="806.0" layoutY="229.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID31" layoutX="621.0" layoutY="266.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID32" layoutX="658.0" layoutY="266.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID33" layoutX="695.0" layoutY="266.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID34" layoutX="732.0" layoutY="266.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID35" layoutX="769.0" layoutY="266.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID36" layoutX="806.0" layoutY="266.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID37" layoutX="621.0" layoutY="303.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID38" layoutX="658.0" layoutY="303.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID39" layoutX="695.0" layoutY="303.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID40" layoutX="732.0" layoutY="303.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID41" layoutX="769.0" layoutY="303.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID42" layoutX="806.0" layoutY="303.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID43" layoutX="621.0" layoutY="340.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID44" layoutX="658.0" layoutY="340.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID45" layoutX="695.0" layoutY="340.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID46" layoutX="732.0" layoutY="340.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID47" layoutX="769.0" layoutY="340.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID48" layoutX="806.0" layoutY="340.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID49" layoutX="621.0" layoutY="377.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID50" layoutX="658.0" layoutY="377.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID51" layoutX="695.0" layoutY="377.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID52" layoutX="732.0" layoutY="377.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID53" layoutX="769.0" layoutY="377.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <Button fx:id="ID54" layoutX="806.0" layoutY="377.0" mnemonicParsing="false" onAction="#buttonClick" prefHeight="37.0" prefWidth="37.0" />
+      <ComboBox fx:id="colorIDComboBox" layoutX="694.0" layoutY="46.0" prefWidth="150.0"/> 
+      <Label layoutX="619.0" layoutY="25.0" text="Select color:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

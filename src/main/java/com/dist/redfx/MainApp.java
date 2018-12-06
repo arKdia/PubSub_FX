@@ -7,7 +7,6 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
@@ -28,6 +27,8 @@ public class MainApp extends Application{
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/Styles.css");
+        
+        
 
         stage.setTitle("JavaFX and Maven");
         stage.setScene(scene);

@@ -1,3 +1,23 @@
 .button {
     -fx-font-weight: bold;
 }
+
+.blue {
+    -fx-background-color:#00a1ff;
+}
+
+.green{
+    -fx-background-color:#5d8c61;
+}
+
+.red{
+    -fx-background-color:#ff0000;
+}
+
+.black{
+    -fx-background-color:#000000;
+}
+
+.white{
+    -fx-background-color:#ffffff;
+}
